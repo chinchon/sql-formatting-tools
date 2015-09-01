@@ -9,7 +9,7 @@ DROP PROCEDURE PreStandardize;
 CREATE PROCEDURE PreStandardize(
     @TableName VARCHAR(255)
     ,@NewTable VARCHAR(255)
-    ,@srcfile VARCHAR(255)
+    -- ,@srcfile VARCHAR(255)
 ) AS
     -- create a temporary table to store column names and their sequential numbering
     DECLARE @Temp TABLE(
@@ -48,7 +48,7 @@ CREATE PROCEDURE PreStandardize(
     END
    
     -- append source file name at the end of the query string
-    SET @ColumnNames = @ColumnNames + ',''' + @srcfile + ''' AS src_file'
+    -- SET @ColumnNames = @ColumnNames + ',''' + @srcfile + ''' AS src_file'
     
     -- remove the first comma from the query string
     SET @ColumnNames = STUFF(@ColumnNames,1,1,'')
