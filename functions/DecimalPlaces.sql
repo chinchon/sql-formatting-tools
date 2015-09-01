@@ -1,0 +1,11 @@
+USE tool;
+
+IF OBJECT_ID('DecimalPlaces','FN') IS NOT NULL
+    DROP FUNCTION DecimalPlaces;
+
+CREATE FUNCTION dbo.DecimalPlaces(@String VARCHAR(255))
+RETURNS INT
+AS
+BEGIN
+    RETURN CHARINDEX('.',REVERSE(@String)) - 1
+END;
