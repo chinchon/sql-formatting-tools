@@ -1,7 +1,9 @@
-# sql-formatting-functions
+# sql-formatting-tools
 
-## PreStandardize
-PreStandardize is a stored procedure that creates new table with standardized column names. It also applies standard cleansing on the data. This store procedure requires only the original table name and the new table name. A preliminary table will be created under the new table name. 
+## Stored Procedure
+
+###### PreStandardize
+PreStandardiz creates new table with standardized column names and applies standard cleansing to the data. This procedure only requires  the original and new table names. A preliminary table will be created with the new table name. 
 
 ## Functions
 This folder contains utility functions that can be used to cleanse data. The functions include: 
