@@ -1,9 +1,7 @@
 # sql-formatting-tools
 
 ## Stored Procedure
-
-##### PreStandardize
-PreStandardize creates a new table with standardized column names and applies cleansing to the data. This procedure only requires the original and new table names. A preliminary table will be created with the new table name. 
+* PreStandardize: creates a new table with standardized column names and applies cleansing to the data.
 
 ## Functions
 * BlankToNull: returns NULL instead of blanks, useful for fields that cannot be blank, e.g. DATE
